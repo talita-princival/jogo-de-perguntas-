@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f6fb;
+    color: #333;
+}
+
+header {
+    background: #172554;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.inicio {
+    min-height: 450px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.inicio h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    background: white;
+    color: #1e3a8a;
+    padding: 14px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.sobre p, .futuro p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: auto;
+    border-left: 4px solid #3b82f6;
+    padding-left: 30px;
+}
+
+.etapa {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+    transition: 0.3s;
+}
+
+.etapa:hover {
+    transform: translateX(8px);
+}
+
+.etapa h3 {
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+.etapa p {
+    line-height: 1.7;
+}
+
+.futuro {
+    background: #dbeafe;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 40px 7%;
+    }
+}
